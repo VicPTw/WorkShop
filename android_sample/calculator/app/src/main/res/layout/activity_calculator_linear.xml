@@ -206,7 +206,7 @@
           android:id="@+id/calculate_button"
           style="@style/CalculateButton"
           android:onClick="@{viewModel::onClickedButton}"
-          android:text="="
+          android:text="WV"
           />
 
     </LinearLayout>

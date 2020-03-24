@@ -1,6 +1,8 @@
 package com.ns.greg.demo
 
+import android.content.Intent
 import android.view.View
+import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
@@ -53,6 +55,12 @@ class MainActivityViewModel : ViewModel() {
 
       R.id.nine_button -> {
         resultLiveData.value = "9"
+      }
+
+      R.id.calculate_button -> {
+        resultLiveData.value = "wv"
+        val intent = Intent(view.context, WebViewActivity::class.java)
+        view.context.startActivity(intent)
       }
     }
   }
